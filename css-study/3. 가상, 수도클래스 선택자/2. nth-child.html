@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    
+    #fruits li:nth-child(2n){
+      color: #fff;
+      background-color: rgb(250, 160, 41);
+      width:80px;
+      text-align: center;
+    }
+    #fruits li:nth-child(2n+1){
+      color: #fff;
+      background-color: rgb(41, 201, 250);
+      width:80px;
+      text-align: center;
+    }
+
+    #food li:last-child{
+      background-color: rgb(183, 223, 123);
+      width:50px;
+      text-align: center;
+    }
+    #food li:first-child{
+      color:rgb(110, 69, 52);
+      font-size: 30px;
+    }
+
+    #food li:not(.strawberry){
+      list-style: none;
+    }
+
+    /* div 중 3번째가 아니라 그냥 3번째의 자식을 선택함. 그래서 p도 자식이 되어 야구가 4번째가 된다*/
+    .sports div:nth-child(4){
+      background-color: blue;
+    }
+    .sports div:nth-of-type(4){
+      background-color: red;
+    }
+
+
+  </style>
+
+</head>
+<body>
+  
+  <div class="sports">
+    <div>축구</div>
+    <div>농구</div>
+    <p>하하호호</p>
+    <div>야구</div>
+    <div>배구</div>
+  </div>
+
+
+  <ul id="fruits">
+    <li>딸기</li>
+    <li>망고</li>
+    <li>바나나</li>
+    <li>블루베리</li>
+    <li>키위</li>
+    <li>파인애플</li>
+    <li>레몬</li>
+  </ul>
+
+  <ul id="food">
+    <li>초코빵</li>
+    <li class="strawberry">딸기빵</li>
+    <li>메론빵</li>
+  </ul>
+
+</body>
+</html>
