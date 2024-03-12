@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /* 1점 */
+    div{ 
+      color:blue;
+      /* color:blue !important; */
+    }
+/* 100점 */
+    #c-y{
+      color:yellow;
+    }
+/* 10점 */
+    .c-g{
+      color:green;
+    }
+/* 1점 */
+    body{
+      color:aqua;
+    }
+ /* 1점 */
+    div{
+      color:red;
+    }
+
+    /* 1점 */
+    h1{
+      color:lightcoral;
+    }
+
+    /* 100+1=101점 */
+    #aaa h1{
+      color:gray;
+    }
+    /* 10+1=11점 */
+    .bbb h1{
+      color:orange;
+    }
+    /* 100+1+10+1=112점 */
+    #aaa div.bbb h1{
+      color:green;
+    }
+    /* 100+10+1=111점 */
+    #aaa .bbb h1{
+      color:tomato;
+    }
+    /* 1+10+1=12점 */
+    div.bbb>h1{
+      color:violet;
+    }
+    /*동점이면 밑에 있는게 우선순위 높음*/
+
+
+    /* a >> 1점
+    a:hover >> 1+10=11점
+    a::before >> 1+1-=2점
+
+
+    ul#fruit>li:not(.orange)
+    1+100+1+0+10=112점 */
+
+
+  </style>
+
+</head>
+<body>
+  
+  <!-- div{안녕하세요$}*5 -->
+
+  <div id="c-y" class="c-g" style="color: orange;">안녕하세요1</div>
+  <div id="c-y" class="c-g">안녕하세요2</div>
+  <div class="c-g">안녕하세요3</div>
+  <div>안녕하세요4</div>
+  <p>안녕하세요5</p>
+
+
+
+  <div id="aaa">
+    <div class="bbb">
+      <h1>안녕하세요6</h1>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
