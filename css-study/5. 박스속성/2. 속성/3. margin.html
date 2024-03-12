@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    *{
+      box-sizing: border-box;
+    }
+
+    body{
+      margin: 0;
+    }
+
+    .container{
+      width: 400px;
+      height: 300px;
+      border: 4px solid #758654;
+      margin-left: 40px;
+      margin-top: 100px;
+    }
+
+    .box{
+      width: 25%;
+      height: 100px;
+      border: 4px solid #525252;
+      background-color: aquamarine;
+      /* margin:30px;  */
+    }
+    .box:first-child{
+      margin-bottom:20px;
+    }
+    .box:last-child{
+      /* margin-left: 5px;
+      margin-top: 5px;
+      margin-right: 5px;
+      margin-bottom: 5px; 
+      내 방향에 전부 5px씩 한줄로 정리하면*/
+      margin: 5px;
+      
+    }
+
+    section{
+      width: 600px;
+      border: 4px solid #86ff36;
+    }
+    section h1{
+      text-align: center;
+      width:50%;
+      border: 4px solid #ff53bd;
+      margin: 20px auto;
+    }
+    
+    section h2{
+      width:fit-content;
+      margin: 10px auto;
+
+    }
+
+
+
+
+  </style>
+
+</head>
+<body>
+  
+  <section>
+    <h1>안녕</h1>
+    <h2>메롱</h2>
+  </section>
+
+
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+</body>
+</html>
