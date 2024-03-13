@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .container{
+      background: rgb(114, 114, 114);
+      width:1000px;
+      height:610px;
+      overflow: hidden;
+      border: 4px double #7f7f7f;
+      /* 페이지 안 가운데 정렬 */
+      margin:20px auto; 
+      
+    }
+
+    .title{
+      background: rgb(201, 201, 201);
+      font-size: 2.8em;
+      font-family: "궁서체", cursive;
+      font-weight: 700;
+      text-align: center;
+      padding: 23px;
+    }
+  
+    .subtitle{
+      background: rgb(60, 60, 60);
+      color:#fff;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 1.5em;
+      border-bottom: 2px solid #afafaf;
+    }
+    .highlight{
+      color: yellow;
+      font-size: 27px;
+    }
+
+    .box{
+      width:22%;
+      height:400px;
+      background-color: rgb(212, 55, 55);
+      margin:1%;
+      margin-top: 2%;
+      margin-left: 1.2%;
+      
+      float: left;
+      border: 1px solid #d2d2d2;
+    }
+
+    .box1{
+      margin-left:2%;
+    }
+
+    .box2{
+      background: magenta;
+    }
+    
+    .box3{
+      background: rgb(255, 115, 0);
+    }
+
+    .box4{
+      background: yellow;
+    }
+
+    .box img{
+      width:93%;
+      height: 45%;
+      overflow: hidden;
+      margin:2.5%;
+      object-fit: cover;
+      border: 1px solid #d2d2d2;
+    }
+
+    p{
+      margin:10px 11px;
+      font-size: 21px;
+      line-height: 30px;
+      color:#363636;
+      font-weight: 700;
+    }
+
+  </style>
+
+</head>
+<body>
+  
+  <div class="container">
+    <div class="title">나의 아름다운 정원</div>
+    <div class="subtitle">
+      사람들은 아마 자신에게 <span class="highlight">자신감을 복돋워 주는</span> 표정 있는 꽃들을 선호할 것이다.
+    </div>
+    <div class="contents">
+      <div class="box box1">
+        <img src="../../img/tulip.jpg">
+        <p>너무 화려하지 않으며 고귀한 느낌을 가지고 있다.
+          붉은 색이 단연 으뜸이며 한 송이만 있어도 빼어나다.</p>
+      </div>
+      <div class="box box2">
+        <img src="../../img/jebi.jpg">
+        <p>드물게 푸른색을 띠고 있으며 작지만 시원해 보이는
+          어린 꽃이라고 할 수 있다. 여럿이 함께 있을 때 더욱 아름답다.</p>
+      </div>
+      <div class="box box3">
+        <img src="../../img/hobak.jpg">
+        <p>색도 모양도 화려하며 이름과 걸맞지 않게 아름다운 꽃으로
+          매우 완숙한 이미지를 풍기는 꽃이다.</p>
+      </div>
+      <div class="box box4">
+        <img src="../../img/sunflower.jpg">
+        <p>태양만 바라보는 일편단심의 꽃으로 얼굴이 큰 편에
+          속하며 송이가 적어야 제격이다.</p>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
