@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    
+    body{
+      height: 2000px;
+    }
+
+    header{
+      border-bottom: 2px solid #000;
+      /* 화면 전체 기준으로 움직임 */
+      position: fixed;
+      /* position:absolute, fixed; 걸면 width기본값 100%이 깨져서 수동으로 넣어줘야 한다. */
+      width: 100%;
+      top:0;
+    }
+    header h1{
+      font-style: 40px;
+      padding: 0;
+      margin: 20px 20px 30px;
+      /* background: orange; */
+      float: left;
+    }
+    header nav{
+      /* background: tomato; */
+      float: right;
+    }
+
+    .clearfix::after{
+      content:'';
+      display: block;
+      clear: both;
+    }
+
+    header nav ul{
+      list-style:none;
+      padding: 0;
+      margin-top: 30px;
+    }
+    header nav ul li{
+      /* border: 1px solid #000; */
+      float: left;
+      font-style: 1.5em;
+      font-weight: 700;
+      margin-right: 30px;
+    }
+
+    span{
+      width: 200px;
+      height: 200px;
+      background: orange;
+      font-size: 3em;
+      margin-top: 100px;
+      /* 인라인 요소에 float이나 position:absolute;하면 자동으로 블록요소로 변경됨 */
+      /* float: left;
+      position: absolute; */
+
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+  
+  <header class="clearfix">
+    <h1>Logo</h1>
+    <nav>
+      <ul class="clearfix">
+        <li>소개</li>
+        <li>커뮤니티</li>
+        <li>자료실</li>
+        <li>회원가입</li>
+      </ul>
+    </nav>
+  </header>
+
+  <span>룰루</span>
+
+</body>
+
+</html>
